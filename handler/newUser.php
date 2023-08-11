@@ -12,12 +12,8 @@ if(isset($_POST['submit'])){
         $stmt->execute([':email'=>$email]);
 
         if($stmt->rowCount() == 0){
-            session_start();
-            if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin'){
-                $role = "admin";
-            }else{
-                $role = "client";
-            }
+            $role = "admin";
+          
         
             $sql = "INSERT INTO `users` (username, email, password, location, phone, role) 
                     VALUES (:username, :email, :password, :location, :phone, :role)";
@@ -31,14 +27,10 @@ if(isset($_POST['submit'])){
             $stmt->bindParam(':role', $role);
     
             $stmt->execute();
-            if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin'){
-                header('location: ../home.php?pass=1');
-            }else{
-                header('location: ../authentication-log-in.php?pass=1');
-
-            }
+            header('location: ../home.php?pass=1');
+           
         }else{
-            header('location: ../authentication-sign-up.php?error=2');
+            header('location: ../admin/authentication-sign-up.php?error=2');
         }
 
     } catch (PDOException $e) {
