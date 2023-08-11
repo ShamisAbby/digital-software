@@ -71,7 +71,7 @@ require_once("./element/links.php");
        </div>
 
        <div class="mb-3">
-        <a class="profile-item" href="my-orders.php">
+        <a class="profile-item" href="#">
          <div class="card rounded-3">
           <div class="card-body py-2">
               <div class="d-flex align-items-center gap-3 fs-6">
@@ -83,23 +83,10 @@ require_once("./element/links.php");
          </div>
         </a>
        </div>
-<!-- 
-       <div class="mb-3">
-        <a class="profile-item" href="addresses.php">
-         <div class="card rounded-3">
-          <div class="card-body py-2">
-              <div class="d-flex align-items-center gap-3 fs-6">
-                 <div><i class="bi bi-geo"></i></div>
-                 <div class="flex-grow-1">Addresses</div>
-                 <div><i class="bi bi-chevron-right"></i></div>
-              </div>
-          </div>
-         </div>
-        </a>
-       </div> -->
+
 
        <div class="mb-3">
-        <a class="profile-item" href="notification.php">
+        <a class="profile-item" href="#">
          <div class="card rounded-3">
           <div class="card-body py-2">
               <div class="d-flex align-items-center gap-3 fs-6">
@@ -112,19 +99,6 @@ require_once("./element/links.php");
         </a>
        </div>
 
-       <!-- <div class="mb-3">
-        <a class="profile-item" href="wishlist.php">
-         <div class="card rounded-3">
-          <div class="card-body py-2">
-              <div class="d-flex align-items-center gap-3 fs-6">
-                 <div><i class="bi bi-heart"></i></div>
-                 <div class="flex-grow-1">Wishlist</div>
-                 <div><i class="bi bi-chevron-right"></i></div>
-              </div>
-          </div>
-         </div>
-        </a>
-       </div> -->
 
        <div class="mb-3">
         <a class="profile-item" href="./handler/logout.php">

@@ -58,13 +58,13 @@
             <form class="mt-4" id="loginForm" action="../handler/login.php" method="post">
 
               <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-3" name="email" id="floatingInputEmail" placeholder="name@example.com">
+                <input type="email" class="form-control rounded-3" name="email" id="floatingInputEmail" placeholder="name@example.com" required>
                 <label for="floatingInputEmail">Email</label>
               </div>
 
               <div class="input-group mb-3" id="show_hide_password">
                 <div class="form-floating flex-grow-1">
-                  <input type="password" class="form-control rounded-3 rounded-end-0 border-end-0" name="pass" id="floatingInputPassword" placeholder="Enter Password">
+                  <input type="password" class="form-control rounded-3 rounded-end-0 border-end-0" name="pass" id="floatingInputPassword" placeholder="Enter Password" required>
                   <label for="floatingInputPassword">Password</label>
                 </div>
                 <span class="input-group-text bg-transparent rounded-start-0 rounded-3"><i class="bi bi-eye-slash"></i></span>
@@ -86,13 +86,13 @@
                 <div class="line"></div>
               </div>
               <div class="social-login d-flex flex-row gap-2 justify-content-center">
-                 <a href="javascript:;" class="bg-facebook">
+                 <a href="#" class="bg-facebook">
                   <i class="bi bi-facebook"></i>
                  </a>
-                 <a href="javascript:;" class="bg-pinterest">
+                 <a href="#" class="bg-pinterest">
                   <i class="bi bi-google"></i>
                 </a>
-                 <a href="javascript:;" class="bg-linkedin">
+                 <a href="#" class="bg-linkedin">
                   <i class="bi bi-linkedin"></i>
                  </a>
                </div>

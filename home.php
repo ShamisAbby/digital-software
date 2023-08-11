@@ -111,7 +111,7 @@ require_once("./element/links.php");
             <a href="shop.php"><img src="assets/images/banner-sliders/05.jpg" class="img-fluid rounded-3" alt=""></a>
           </div>
           <div class="banner-item">
-            <a href="shop.php"><img src="assets/images/banner-sliders/06.jpg" class="img-fluid rounded-3" alt=""></a>
+            <a href="shop.php"><img src="assets/images/banner-sliders/02.jpg" class="img-fluid rounded-3" alt=""></a>
           </div>
         </div>
         <!--end banner slider-->
@@ -454,12 +454,28 @@ require_once("./element/links.php");
                   <div class="name">Category</div>
                 </div>
               </a>
-              <a class="nav-link" href="profile.php">
-                <div class="d-flex flex-column align-items-center">
-                  <div class="icon"><i class="bi bi-person"></i></div>
-                  <div class="name">Profile</div>
-                </div>
-              </a>
+              <?php
+              if (isset($_SESSION['role']) && $role == "admin") {
+              ?>
+                <a class="nav-link" href="profile.php">
+                  <div class="d-flex flex-column align-items-center">
+                    <div class="icon"><i class="bi bi-person"></i></div>
+                    <div class="name">Profile</div>
+                  </div>
+                </a>
+              <?php
+              } else {
+              ?>
+                <a class="nav-link" href="#">
+                  <div class="d-flex flex-column align-items-center">
+                    <div class="icon"><i class="bi bi-person"></i></div>
+                    <div class="name">Profile</div>
+                  </div>
+                </a>
+              <?php
+              }
+              ?>
+
               <a class="nav-link" href="contact-us.php">
                 <div class="d-flex flex-column align-items-center">
                   <div class="icon"><i class="bi bi-phone"></i></div>

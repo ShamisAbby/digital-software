@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 
             header('location: ../home.php?pass=1');
         } else {
-            header('location: ../authentication-log-in.php?error=1');
+            header('location: ../admin/index.php?error=1');
         }
     } catch (PDOException $e) {
         // Handle database connection or query errors
